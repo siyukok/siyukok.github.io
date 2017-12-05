@@ -61,9 +61,9 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-AndroidVersionIssue" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-AndroidNotebook" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/12/01/AndroidVersionIssue/" class="article-date">
+    <a href="/2017/12/01/AndroidNotebook/" class="article-date">
   <time datetime="2017-12-01T05:42:54.407Z" itemprop="datePublished">2017-12-01</time>
 </a>
     
@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/01/AndroidVersionIssue/">AndroidVersionIssue</a>
+      <a class="article-title" href="/2017/12/01/AndroidNotebook/">AndroidNoteBook</a>
     </h1>
   
 
@@ -84,7 +84,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="记录android开发中可能遇到的一些问题"><a href="#记录android开发中可能遇到的一些问题" class="headerlink" title="记录android开发中可能遇到的一些问题"></a>记录android开发中可能遇到的一些问题</h2><ul>
+<h2 id="记录android开发中一些不熟悉的知识点以及可能遇到的问题和解决方案"><a href="#记录android开发中一些不熟悉的知识点以及可能遇到的问题和解决方案" class="headerlink" title="记录android开发中一些不熟悉的知识点以及可能遇到的问题和解决方案"></a>记录android开发中一些不熟悉的知识点以及可能遇到的问题和解决方案</h2><ul>
 <li><p>Android5.0开始使用隐式intent 调用bindService方法,系统会引发异常</p>
 </li>
 <li><p>使用隐式intent时,若要同时设置 URI 和 MIME 类型，请勿调用 setData() 和 setType()，因为它们会互相抵消彼此的值。请始终使用 setDataAndType() 同时设置 URI 和 MIME 类型。</p>
@@ -93,12 +93,37 @@
 </li>
 <li><p>在fragment的onCreate方法中inflater的inflate()方法第三个参数为是否应该在扩展期间将扩展布局附加至 ViewGroup（第二个参数）的布尔值。此处应为 false，因为系统已经将扩展布局插入 container — 传递 true 值会在最终布局中创建一个多余的视图组。</p>
 </li>
+<li><p>使用SpannableString为文字设置各种效果</p>
+<ul>
+<li>BackgroundColorSpan 背景色 </li>
+<li>ClickableSpan 文本可点击，有点击事件</li>
+<li>ForegroundColorSpan 文本颜色（前景色）</li>
+<li>MaskFilterSpan 修饰效果，如模糊(BlurMaskFilter)、浮雕(EmbossMaskFilter)</li>
+<li>MetricAffectingSpan 父类，一般不用</li>
+<li>RasterizerSpan 光栅效果</li>
+<li>StrikethroughSpan 删除线（中划线）</li>
+<li>SuggestionSpan 相当于占位符</li>
+<li>UnderlineSpan 下划线</li>
+<li>AbsoluteSizeSpan 绝对大小（文本字体）</li>
+<li>DynamicDrawableSpan 设置图片，基于文本基线或底部对齐。</li>
+<li>ImageSpan 图片</li>
+<li>RelativeSizeSpan 相对大小（文本字体）</li>
+<li>ReplacementSpan 父类，一般不用</li>
+<li>ScaleXSpan 基于x轴缩放</li>
+<li>StyleSpan 字体样式：粗体、斜体等</li>
+<li>SubscriptSpan 下标（数学公式会用到）</li>
+<li>SuperscriptSpan 上标（数学公式会用到）</li>
+<li>TextAppearanceSpan 文本外貌（包括字体、大小、样式和颜色）</li>
+<li>TypefaceSpan 文本字体</li>
+<li>URLSpan 文本超链接</li>
+</ul>
+</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/01/AndroidVersionIssue/" data-id="cjanl74lw0000k4v89g97ghxn" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/12/01/AndroidNotebook/" data-id="cjat0x98q0000rsv8t3iwod5m" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -135,7 +160,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/01/MyFirstBlog/" data-id="cjanl74mb0001k4v8fxj5su35" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/12/01/MyFirstBlog/" data-id="cjat0x9980001rsv8t9k7f7we" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -175,7 +200,7 @@
       <ul>
         
           <li>
-            <a href="/2017/12/01/AndroidVersionIssue/">AndroidVersionIssue</a>
+            <a href="/2017/12/01/AndroidNotebook/">AndroidNoteBook</a>
           </li>
         
           <li>
